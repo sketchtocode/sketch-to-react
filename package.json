@@ -1,0 +1,23 @@
+{
+  "name": "sketch-to-code-meteor-react-boilerplate",
+  "version": "1.0.1",
+  "description": "Sketch to Code Meteor React Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajaneczko/sketch-to-code-meteor-react-boilerplate"
+  },
+  "author": "ajaneczko",
+  "license": "ISC",
+  "homepage": "https://github.com/ajaneczko/sketch-to-code-meteor-react-boilerplate",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "history": "^3.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  }
+}

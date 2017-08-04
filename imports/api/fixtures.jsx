@@ -1,3 +1,5 @@
+import { Meteor } from 'meteor/meteor';
+
 export const menuItems = [
   {
     title: 'Basic facts'

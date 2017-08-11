@@ -8,7 +8,7 @@ export default class ImageGalleryVertical extends Component {
     };
   }
   getImagesFromCuriosity() {
-    return (
+    if (Meteor.isClient) {
       HTTP.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1001&api_key=wGY8dKKEiYAnNVJUmDsi9diGimt5LgHqViLOPbBe', (error, data)  => {
         if (data) {
           this.setState(
@@ -16,7 +16,7 @@ export default class ImageGalleryVertical extends Component {
           )
         }
       })
-    )
+    }
   }
   componentWillMount() {
     this.getImagesFromCuriosity()
@@ -34,8 +34,11 @@ export default class ImageGalleryVertical extends Component {
   }
   render() {
     return (
-      <div>
-        {this.renderImagesGallery()}
+      <div className="image-gallery-vertical">
+        <div className="overlay"/>
+        <div className="image-gallery-wrapper">
+          {this.renderImagesGallery()}
+        </div>
       </div>
     );
   }

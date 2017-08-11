@@ -1,0 +1,34 @@
+@keyframes satelliteMove{
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) translateX(-50px) rotate(0deg) scale(0.1);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(0px) translateX(0px) rotate(80deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(200px) translateX(100px) rotate(120deg) scale(1.1);
+  }
+}
+@keyframes orbitRotate {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(2px) rotate(360deg);
+  }
+}
+@keyframes scaleUpBorder {
+    0% {
+      height: 0;
+      opacity: 0.5;
+    }
+    100% {
+      height: 95%;
+      opacity: 1;
+    }
+}

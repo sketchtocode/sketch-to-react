@@ -15,7 +15,8 @@ export default class PrimaryMenu extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="primary-menu">
+        <div className="border"/>
         {this.renderMenu()}
       </div>
     );

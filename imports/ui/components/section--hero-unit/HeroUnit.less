@@ -1,0 +1,90 @@
+.hero-unit-wrapper {
+  svg {
+    fill {
+      color: #FF0A47;
+    }
+    g {
+      fill: #FF0A47;
+      path {
+        color: #FF0A47;
+      }
+    }
+    path {
+      color: #FF0A47;
+    }
+  }
+  .orbit {
+    width: 100px;
+    height: 100px;
+    left: 29%;
+    top: 20%;
+    z-index: 0;
+    position: absolute;
+    border-radius: 100px;
+    border: 8px dashed #FF0A47;
+    animation: orbitRotate 2s ease-in infinite alternate 3s;
+  }
+  .orbit2 {
+    width: 50px;
+    height: 50px;
+    left: 31%;
+    top: 22%;
+    z-index: 0;
+    position: absolute;
+    border-radius: 100px;
+    border: 8px dashed #FF0A47;
+    animation: orbitRotate 2s ease-in-out infinite alternate 3s;
+  }
+  #satellite {
+    svg {
+      color: #FF0A47;
+    }
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100px;
+    animation: satelliteMove 5s ease-in infinite alternate 0s;
+  }
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background: black;
+  .element {
+    position: absolute;
+    z-index: 999;
+    color: white ;
+    p {
+      color: white !important;
+    }
+  }
+  h1, h2, .primary-menu {
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 80px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0;
+  }
+  h2 {
+    margin-top: 10px;
+    font-size: 45px;
+  }
+  h1, h2 {
+      color: white;
+  }
+
+  .hero-unit-background {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+  }
+}

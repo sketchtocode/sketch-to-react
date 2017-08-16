@@ -9,7 +9,7 @@ export default class PrimaryMenu extends Component {
   renderMenu() {
     return(
       menuItems.map(item => (
-        <MenuItem item={item.title}/>
+        <MenuItem item={item.title} key={item.title}/>
       ))
     )
   }

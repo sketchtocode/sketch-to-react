@@ -25,7 +25,7 @@ export default class ImageGalleryVertical extends Component {
     if (this.state.images) {
       return(
         this.state.images.map((image, index) => (
-          ((index < 50) ? <ImageGalleryPhoto url={image.img_src}/> : null)
+          ((index < 50) ? <ImageGalleryPhoto url={image.img_src} key={image.img_src}/> : null)
         ))
       )
     } else {

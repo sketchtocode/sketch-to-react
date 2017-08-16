@@ -1,0 +1,40 @@
+@import './../../styles/variables.less';
+
+.begginings-single-event {
+  color: white !important;
+  min-height: 60px;
+  height: auto;
+  position: relative;
+  .event-date, .event-description {
+    display: inline;
+    color: white;
+  }
+  .event-description {
+    font-family: Futura-Medium;
+    font-size: 13px;
+    color: #D6D6D6;
+  }
+  .dot-wrapper {
+    position: relative;
+    left: -30px;
+  }
+  .dot {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 100px;
+    &::before {
+      content: '';
+      background-color: @primary-color;
+      width: 20px;
+      height: 20px;
+      top: 5px;
+      border-radius: 100px;
+      left: 5px;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+}

@@ -32,3 +32,31 @@
       opacity: 1;
     }
 }
+@keyframes voyagerPath{
+  0% {
+    opacity: 0.7;
+    transform: translateY(-50px) translateX(0) rotate(0deg) scale(1.0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px) rotate(2deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(50px) translateX(-5px) rotate(5deg) scale(1);
+  }
+}
+@keyframes warpSpeed{
+  0% {
+    opacity: 0.1;
+    transform: translateY(-50px) scaleY(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(0px) scaleY(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px) scaleY(1);
+  }
+}

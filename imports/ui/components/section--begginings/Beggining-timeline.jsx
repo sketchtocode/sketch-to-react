@@ -10,7 +10,7 @@ export default class BegginingTimeline extends Component {
     if (projectSummary) {
       return(
         projectSummary.map((event, index) => (
-          <BegginingEvent eventDescription={event.description} eventDate={event.date} key={event.designation}/>
+          <BegginingEvent designation={event.designation} eventDescription={event.description} eventDate={event.date} key={event.designation}/>
         ))
       )
     } else {

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import BegginingTimeline from './Beggining-timeline.jsx';
 import {voyager} from './../svg/shapes.jsx';
-import {renderWarpAccelrateEffect} from '../../../api/fixtures.jsx'
+import {renderWarpAccelrateEffect} from '../../../api/helpers.jsx'
 import $ from 'jquery';
 export default class Beggnings extends Component {
   constructor(props) {
